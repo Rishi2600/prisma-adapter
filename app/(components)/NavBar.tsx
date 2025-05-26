@@ -15,9 +15,9 @@ export default function NavBar() {
                 <div className="text-5xl text-gray-200 font-sans font-bold ">Moozer</div>
                 <div className="font-sans font-semibold">
                      {session.status==="authenticated" ? (
-                        <button onClick={() => {signOut()}}>signOut</button>
+                        <button className="hover:cursor-pointer" onClick={() => {signOut()}}>signOut</button>
                     ):(
-                        <button onClick={() => {signIn()}}>signIn</button>
+                        <button className="hover:cursor-pointer" onClick={() => {signIn()}}>signIn</button>
                     )}
                 </div>
             </nav>
