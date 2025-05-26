@@ -16,3 +16,5 @@ export const options = {
         })
     ]
 }
+
+console.log(options.adapter)
